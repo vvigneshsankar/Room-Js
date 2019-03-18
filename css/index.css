@@ -35,14 +35,10 @@ input[type="number"] {
 }
 
 button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow:none;
-}
-.disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
 
+}
 #rminus,#aminus,#cminus{
 	color:rgb(0, 0, 128);
 	font-size: 30px;
