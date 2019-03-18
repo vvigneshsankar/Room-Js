@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet"  type="text/css" href="css/index.css?version=51">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="js/func.js">
+
+
+</script>
+</head>
+<body>
+<div class="col-md-8 offset-md-1">
+<p class="clr ftsize"><span class="fa fa-group"></span>&nbsp;&nbsp;Choose number of <b>people</b></p>
+</div>
+<div class="col-md-8 offset-md-1 content">
+<div class="row">
+<div class="room col-md-9">
+<p class="clr ctsize"><span class="fa fa-bed"></span> ROOMS</p>
+</div>
+<div class="col-md-3">
+<button class="fa fa-minus-circle" id="rminus" onclick="roomMinus()" ></button>
+ <input type="number" class="count" id="room" value="0" min="1" max="5" readonly>
+<button class="fa fa-plus-circle" id="rplus" onclick="roomPlus()"></button>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="adults col-md-9">
+<p class="clr ctsize"><span class="fa fa-male"></span> ADULTS</p>
+</div>
+<div class="col-md-3">
+<button class="fa fa-minus-circle" id="aminus" onclick="adultMinus()"></button>
+ <input type="number" class="count" id="adult" value="0" readonly>
+<button class="fa fa-plus-circle" id="aplus" onclick="adultPlus()"></button>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="adults col-md-9">
+<p class="clr ctsize"><span class="fa fa-child"></span> CHILDREN</p>
+</div>
+<div class="col-md-3">
+<button class="fa fa-minus-circle" id="cminus" onclick="childMinus()"></button>
+ <input type="number" class="count" id="child" value="0" readonly>
+<button class="fa fa-plus-circle" id="cplus" onclick="childPlus()"></button>
+</div>
+</div>
+</div>
+</body>
+</html>
