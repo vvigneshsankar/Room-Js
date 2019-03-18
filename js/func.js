@@ -6,9 +6,8 @@ function roomPlus(){
           {
             enableRm();
             enableAd();
-           document.getElementById('rminus').style.opacity="1";
-          document.getElementById('room').value=room+1;
-          document.getElementById('adult').value=adult+1;
+            document.getElementById('room').value=room+1;
+            document.getElementById('adult').value=adult+1;
           }
           else{
             disableRmAdd();
