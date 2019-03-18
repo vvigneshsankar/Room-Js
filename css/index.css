@@ -37,7 +37,6 @@ input[type="number"] {
 button:hover{
     transform: scale(1.1);
     box-shadow:none;
-
 }
 #rminus,#aminus,#cminus{
 	color:rgb(0, 0, 128);
