@@ -31,11 +31,18 @@ input[type="number"] {
 }
 #rplus,#aplus,#cplus{
 	color:rgb(255,20,147);
-	font-size:30px;	
+	font-size:30px;
 }
-#rplus,#aplus,#cplus{
 
+button:hover{
+    transform: scale(1.2);
+    box-shadow:none;
 }
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 #rminus,#aminus,#cminus{
 	color:rgb(0, 0, 128);
 	font-size: 30px;

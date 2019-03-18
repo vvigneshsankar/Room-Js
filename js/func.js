@@ -16,7 +16,8 @@ function roomMinus()
       		var people=adult+child;
       			if(room==1)
       			{
-      			document.getElementById('rminus').disable=true;
+						document.getElementById('rminus').disable=true;
+						
       			}
       			else if((roomcapacity>=people)&&(child>0)&&(room>0)){
 			document.getElementById('room').value=room-1;
