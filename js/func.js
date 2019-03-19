@@ -26,14 +26,14 @@ function roomMinus()
               enableRmAdd();
               disableRm();
 						
-          }
+            }
       			else if((roomcapacity>=people)&&(child>0)&&(room>0))
             {
-              enableRm();
-              enableRmAdd();
-              enableAdPlus();
-			       document.getElementById('room').value=room-1;
-            	var roomcount=parseInt(document.getElementById('room').value);							          				
+            enableRm();
+            enableRmAdd();
+            enableAdPlus();
+			      document.getElementById('room').value=room-1;
+            var roomcount=parseInt(document.getElementById('room').value);							          				
 						document.getElementById('adult').value=roomcount*4;
 			      document.getElementById('child').value=0;
 			      }
@@ -42,9 +42,9 @@ function roomMinus()
             enableRmAdd();
             enableRm();
             enableAdPlus();
-			       document.getElementById('room').value=room-1;
-			       var roomcount=parseInt(document.getElementById('room').value);
-			       document.getElementById('adult').value=roomcount*4;
+			      document.getElementById('room').value=room-1;
+			      var roomcount=parseInt(document.getElementById('room').value);
+			      document.getElementById('adult').value=roomcount*4;
 			     }
 }
 function adultPlus()
@@ -59,16 +59,16 @@ function adultPlus()
             }
             else if((people>=roomcapacity)&&(room<5))
       			{
-      			   enableRm();
-               enableAd();
-               document.getElementById('room').value=room+1;
-      		     	document.getElementById('adult').value=adult+1;
+      			 enableRm();
+             enableAd();
+             document.getElementById('room').value=room+1;
+      		   document.getElementById('adult').value=adult+1;
       			}
       			else if(people<20)
       			{
-            		enableRm();
-                enableAd();
-                document.getElementById('adult').value=adult+1;
+            	enableRm();
+              enableAd();
+              document.getElementById('adult').value=adult+1;
         		}
             
 }
@@ -84,9 +84,9 @@ function adultMinus()
            }
            else if((adult==room)&&(room>1)&&(child==0))
 					 {
-              enableAdPlus();
-              enableAd();
-              enableRmAdd();
+             enableAdPlus();
+             enableAd();
+             enableRmAdd();
 						 document.getElementById('room').value=room-1;
 						 document.getElementById('adult').value=adult-1;
 					 }
