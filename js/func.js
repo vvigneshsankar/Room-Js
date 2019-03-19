@@ -31,6 +31,7 @@ function roomMinus()
             {
               enableRm();
               enableRmAdd();
+              enableAdPlus();
 			       document.getElementById('room').value=room-1;
             	var roomcount=parseInt(document.getElementById('room').value);							          				
 						document.getElementById('adult').value=roomcount*4;
@@ -40,6 +41,7 @@ function roomMinus()
 			     {
             enableRmAdd();
             enableRm();
+            enableAdPlus();
 			       document.getElementById('room').value=room-1;
 			       var roomcount=parseInt(document.getElementById('room').value);
 			       document.getElementById('adult').value=roomcount*4;
@@ -82,14 +84,16 @@ function adultMinus()
            }
            else if((adult==room)&&(room>1)&&(child==0))
 					 {
-              EnableAdPlus();
+              enableAdPlus();
               enableAd();
+              enableRmAdd();
 						 document.getElementById('room').value=room-1;
 						 document.getElementById('adult').value=adult-1;
 					 }
 					else if((room>=1)&&(adult>1)){
-            EnableAdPlus();
+            enableAdPlus();
             enableAd();
+            enableRmAdd();
 						document.getElementById('adult').value=adult-1;
 					 }
              		
@@ -160,7 +164,7 @@ function disableAdPlus(){
   document.getElementById('aplus').disabled=true;
 document.getElementById('aplus').style.opacity="0.5";
 }
-function EnableAdPlus(){
+function enableAdPlus(){
    document.getElementById('aplus').disabled=false;
 document.getElementById('aplus').style.opacity="1"; 
 }
